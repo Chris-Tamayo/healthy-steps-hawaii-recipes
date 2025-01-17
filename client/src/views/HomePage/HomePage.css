@@ -1,0 +1,16 @@
+.start-button {
+  font-family: var(--secondary-font-family) !important;
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.start-button:hover {
+  background-color: var(--ternary-color);
+}
+
+.home-page-container h1 {
+  font-size: 4rem;
+}
