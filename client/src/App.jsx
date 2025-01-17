@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './views/HomePage/HomePage';
-import AboutPage from './views/AboutPage/AboutPage';
-import BasketPage from './views/BasketPage/BasketPage';
-import IngredientsPage from './views/IngredientsPage/IngredientsPage';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./views/HomePage/HomePage";
+import AboutPage from "./views/AboutPage/AboutPage";
+import BasketPage from "./views/BasketPage/BasketPage";
+import IngredientsPage from "./views/IngredientsPage/IngredientsPage";
 
 function App() {
   return (
