@@ -1,6 +1,26 @@
+import IngredientCard from "../../components/IngredientCard/IngredientCard";
 import Navbar from "../../components/Navbar/Navbar"
 
 const IngredientsPage = () => {
+  const ingredients = [
+    {
+      name: "Peanut Butter",
+      quantity: "6 oz",
+      description: "Organic",
+    },
+    {
+      name: "Canned Chicken",
+      quantity: "6 oz",
+      description: "Organic",
+    },
+    {
+      name: "Canned Tuna",
+      quantity: "6 oz",
+      description: "Organic",
+    },
+
+  ];
+
   return (
     <div className="d-flex justify-content-center w-100 h-100">
       <Navbar />
@@ -12,8 +32,15 @@ const IngredientsPage = () => {
 
           <hr/>
 
-          <div className="ingredients-container">
-            Ingredients
+          <div className="d-flex flex-row justify-content-between flex-wrap ingredients-container">
+            {ingredients.map((ingredient, index) => (
+              <IngredientCard 
+                key={index} 
+                name={ingredient.name}
+                quantity={ingredient.quantity}
+                description={ingredient.description}
+              />
+            ))}
           </div>
           
         </div>
