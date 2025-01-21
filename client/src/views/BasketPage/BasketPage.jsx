@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar"
+import { IngredientsContext } from "../../context/IngredientsProvider";
 
 const BasketPage = () => {
+  const { selectedIngredients } = useContext(IngredientsContext);
+
   return (
     <div className="d-flex justify-content-center w-100 h-100">
       <Navbar />
@@ -13,7 +17,12 @@ const BasketPage = () => {
         <hr/>
 
         <div className="ingredients-container">
-          Basket
+          Ingredients:
+          <ul>
+            {selectedIngredients.map((ingredient) => (
+              <li key={ingredient.name}>{ingredient.name}</li>
+            ))}
+          </ul>
         </div>
         
       </div>

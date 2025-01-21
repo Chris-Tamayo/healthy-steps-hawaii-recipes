@@ -1,3 +1,18 @@
 .ingredient-card {
-  
+  border: 1px #E6E6E6 solid;
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.ingredient-card img {
+  border-radius: 10px;
+}
+
+.ingredient-card .quantity {
+  color: var(--secondary-color);
+}
+
+.ingredient-card .description {
+  color: #6D6D6D;
 }
