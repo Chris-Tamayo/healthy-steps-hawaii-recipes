@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar"
 import { IngredientsContext } from "../../context/IngredientsProvider";
+import "../BasketPage/BasketPage.css";
 
 const BasketPage = () => {
   const { selectedIngredients } = useContext(IngredientsContext);
@@ -10,8 +11,9 @@ const BasketPage = () => {
       <Navbar />
       <div className="content-container">
         <div className="ingredients-header">
-          <div className="d-flex">
+        <div className="d-flex align-items-end">
             <h1 className="content-header">Basket</h1>
+            <p className="mx-3 item-count fw-light">{selectedIngredients.length} item(s)</p>
           </div>
         </div>
         <hr/>

@@ -1,11 +1,27 @@
 .ingredient-card {
   border: 1px #E6E6E6 solid;
-  width: 350px;
-  height: 450px;
+  /* width: 350px;
+  height: 450px; */
+  margin: 15px;
+  width: 225px;
+  height: 300px;
   border-radius: 10px;
 }
 
+.ingredient-text-container {
+  font-size: 14px;
+  background-color: #FAFAF5;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.ingredient-card p {
+  margin-bottom: 0px;
+}
+
 .ingredient-card img {
+  max-height: 200px;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -15,4 +31,14 @@
 
 .ingredient-card .description {
   color: #6D6D6D;
+}
+
+.ingredient-card button {
+  font-size: 13px;
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.ingredient-card button:hover {
+  background-color: var(--ternary-color);
 }
