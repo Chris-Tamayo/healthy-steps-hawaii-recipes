@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar"
 import { IngredientsContext } from "../../context/IngredientsProvider";
 import "../BasketPage/BasketPage.css";
+import BasketCard from "../../components/BasketCard/BasketCard";
 
 const BasketPage = () => {
   const { selectedIngredients } = useContext(IngredientsContext);
@@ -18,14 +19,25 @@ const BasketPage = () => {
         </div>
         <hr/>
 
-        <div className="ingredients-container">
-          Ingredients:
-          <ul>
-            {selectedIngredients.map((ingredient) => (
-              <li key={ingredient.name}>{ingredient.name}</li>
-            ))}
-          </ul>
+        <div className="w-100 d-flex flex-row">
+          <div className="basket-container">
+          {selectedIngredients.map((ingredient, index) => (
+            <BasketCard 
+              key={index} 
+              name={ingredient.name}
+              quantity={ingredient.quantity}
+              image={ingredient.image}
+            />
+          ))}
+          </div>
+          <button className="recipes-button">
+            <div className="h-100 p-2 d-flex justify-content-between align-items-center">
+              <p className="m-0">Find your recipes!</p>
+              <p className="m-0">{">"}</p>
+            </div>
+          </button>
         </div>
+        
         
       </div>
     </div>

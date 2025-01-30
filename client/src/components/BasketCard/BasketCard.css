@@ -1,0 +1,26 @@
+.basket-card {
+  border: 1px #E6E6E6 solid;
+  border-radius: 10px;
+}
+
+.basket-card img {
+  padding: 5px;
+  width: 100px;
+  height: 133px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.basket-card p {
+  margin: 0;
+}
+
+.basket-text-container {
+  background-color: #FAFAF5;
+  border-radius: 10px;
+  height: 133px;
+}
+
+.basket-card .quantity {
+  color: var(--secondary-color);
+}

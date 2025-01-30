@@ -2,7 +2,7 @@ import AddRemoveButton from "../AddRemoveButton/AddRemoveButton";
 import "../IngredientCard/IngredientCard.css";
 
 const IngredientCard = ({ name, quantity, description, image }) => {
-  const ingredient = { name, quantity, description };
+  const ingredient = { name, quantity, description, image };
 
   return (
     <div className="d-flex flex-column ingredient-card">
