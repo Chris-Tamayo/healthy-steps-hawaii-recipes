@@ -25,7 +25,7 @@ const Navbar = () => {
             onClick={() => navigate(`/ingredients`)}
             className="text-decoration-none text-dark border-0 bg-transparent"
           >
-            <p className="m-0">Select Ingredients</p>
+            <p className="m-0">Ingredients</p>
           </button>
           <button
             onClick={() => navigate(`/basket`)}
