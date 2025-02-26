@@ -40,17 +40,17 @@ const IngredientsPage = () => {
 
           <hr />
 
-          <div className="d-flex flex-row justify-content-start flex-wrap ingredients-container">
-            {ingredients.map((ingredient, index) => (
-              <IngredientCard
-                key={index}
-                name={ingredient.name}
-                quantity={ingredient.quantity}
-                description={ingredient.description}
-                image={ingredient.image}
-              />
-            ))}
-          </div>
+          <div className="w-100 d-flex flex-row justify-content-start flex-wrap">
+          {ingredients.map((ingredient, index) => (
+            <IngredientCard
+              key={index}
+              name={ingredient.name}
+              quantity={ingredient.quantity}
+              description={ingredient.description}
+              image={ingredient.image}
+            />
+          ))}
+          </div>          
         </div>
       </div>
     </div>

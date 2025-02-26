@@ -14,3 +14,19 @@
 .home-page-container h1 {
   font-size: 4rem;
 }
+
+@media (max-width: 768px) {
+  .home-page-container h1 {
+    font-size: 3rem;
+  }
+
+  .start-button {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .home-page-container h1 {
+    font-size: 2rem;
+  }
+}

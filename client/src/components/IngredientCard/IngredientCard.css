@@ -2,8 +2,9 @@
   border: 1px #E6E6E6 solid;
   /* width: 350px;
   height: 450px; */
-  margin: 15px;
-  width: 225px;
+  margin: 1%;
+  /* min-width: 200px; */
+  width: 18%;
   height: 300px;
   border-radius: 10px;
 }
@@ -41,4 +42,29 @@
 
 .ingredient-card button:hover {
   background-color: var(--ternary-color);
+}
+
+@media (max-width: 1024px) {
+  .ingredient-card {
+    width: 23%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ingredient-card {
+    width: 31%;
+  }
+}
+
+@media (max-width: 596px) {
+  .ingredient-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 320px) {
+  .ingredient-card {
+    margin: 10%;
+    width: 80%;
+  }
 }
