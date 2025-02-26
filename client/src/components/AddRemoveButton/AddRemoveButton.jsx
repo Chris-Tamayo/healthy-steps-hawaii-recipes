@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { IngredientsContext } from "../../context/IngredientsProvider.jsx";
+import "../AddRemoveButton/AddRemoveButton.css";
 
 const AddRemoveButton = ({ ingredient }) => {
   const { selectedIngredients, toggleIngredient } = useContext(IngredientsContext);

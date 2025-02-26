@@ -21,7 +21,7 @@ const Navbar = () => {
           type="button"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span class="material-symbols-outlined navbar-toggler-icon">menu</span>
+          <span className="material-symbols-outlined navbar-toggler-icon">menu</span>
         </button>
 
         <nav className={`d-flex gap-3 ${isOpen ? "d-block" : "d-none"} d-md-flex`}>
