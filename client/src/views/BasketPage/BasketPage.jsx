@@ -3,8 +3,10 @@ import Navbar from "../../components/Navbar/Navbar"
 import { IngredientsContext } from "../../context/IngredientsProvider";
 import "../BasketPage/BasketPage.css";
 import BasketCard from "../../components/BasketCard/BasketCard";
+import { useNavigate } from "react-router-dom";
 
 const BasketPage = () => {
+  const navigate = useNavigate();
   const { selectedIngredients } = useContext(IngredientsContext);
 
   return (
@@ -19,7 +21,8 @@ const BasketPage = () => {
         </div>
         <hr/>
 
-        <div className="w-100 d-flex flex-row">
+        {selectedIngredients.length > 0 ?
+        (<div className="w-100 d-flex flex-row">
           <div className="basket-container">
           {selectedIngredients.map((ingredient, index) => (
             <BasketCard 
@@ -36,7 +39,20 @@ const BasketPage = () => {
               <p className="m-0">{">"}</p>
             </div>
           </button>
-        </div>
+        </div>)
+        : (
+          <div className="d-flex justify-content-center align-items-center empty-cart-container">
+            <p>
+              <button 
+                onClick={() => navigate(`/ingredients`)} 
+                className="border-0 bg-transparent p-0"
+              >
+                Visit the Ingredients page
+              </button> 
+              &nbsp;to add items to your cart.
+            </p>
+          </div>
+        )}
         
         
       </div>

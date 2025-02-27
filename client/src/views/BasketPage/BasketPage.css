@@ -19,3 +19,17 @@
 .recipes-button:hover {
   background-color: var(--ternary-color);
 }
+
+.empty-cart-container {
+  height: 60vh;
+  font-size: 1.5rem;
+}
+
+.empty-cart-container button {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.empty-cart-container button:hover {
+  color: var(--ternary-color);
+}
