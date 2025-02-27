@@ -33,3 +33,15 @@
 .empty-cart-container button:hover {
   color: var(--ternary-color);
 }
+
+@media (max-width: 768px) {
+  .empty-cart-container {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .empty-cart-container {
+    font-size: 0.75rem;
+  }
+}

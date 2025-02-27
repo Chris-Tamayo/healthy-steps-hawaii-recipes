@@ -49,7 +49,7 @@ const BasketPage = () => {
               >
                 Visit the Ingredients page
               </button> 
-              &nbsp;to add items to your cart.
+              &nbsp;to add items to your basket.
             </p>
           </div>
         )}
