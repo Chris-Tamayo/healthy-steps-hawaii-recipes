@@ -1,6 +1,9 @@
 import "../BasketCard/BasketCard.css";
+import RemoveButton from "../RemoveButton/RemoveButton";
 
 const BasketCard = ({ name, quantity, image }) => {
+  const ingredient = { name, quantity, image };
+
   return (
     <div className="d-flex flex-row align-items-center basket-card mb-2">
       <img src={image} alt={name} />
@@ -9,7 +12,7 @@ const BasketCard = ({ name, quantity, image }) => {
           <p className="name fw-bold">{name}</p>
           <p className="quantity">{quantity}</p>
         </div>
-        <p>X</p>
+        <RemoveButton ingredient={ingredient} />
       </div>
     </div>
   )

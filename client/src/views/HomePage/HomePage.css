@@ -1,5 +1,4 @@
 .start-button {
-  font-family: var(--secondary-font-family) !important;
   color: white;
   background-color: var(--secondary-color);
   border-radius: 10px;
